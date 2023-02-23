@@ -67,7 +67,7 @@ pipeline{
              }
            }
 
-           sh 'git clone https://github.com/jigarcia/kubernetes-helm-docker-config.git configuracion --branch master'
+           sh 'git clone https://github.com/nachogarciaprieto/kubernetes-helm-docker-config.git configuracion --branch master'
            sh 'kubectl apply -f configuracion/kubernetes-deployment/spring-boot-app/manifest.yml -n default --kubeconfig=configuracion/kubernetes-config/config'
        }
    }
