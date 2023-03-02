@@ -82,7 +82,7 @@ pipeline{
 
     stage ("Run API Test") {
         steps{
-            node("nodejs-node"){
+            node("nodejs-nodo"){
                 script {
                     if(fileExists("spring-boot-app")){
                         sh 'rm -r spring-boot-app'
